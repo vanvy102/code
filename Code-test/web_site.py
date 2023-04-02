@@ -1,5 +1,4 @@
 import streamlit as st
-import openai
 import config as cf
 import time
 from streamlit_chat import message
