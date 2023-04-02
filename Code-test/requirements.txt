@@ -1,0 +1,2 @@
+openai==0.26.5
+vnstock==0.1.4
