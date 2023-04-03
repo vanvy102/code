@@ -16,7 +16,7 @@ from streamlit_chat import message
 #     )
 #     response_text = response.choices[0].text
 #     return response_text
-ticket=cf.get_ticket()
+#ticket=cf.get_ticket()
 # #Container1:
 with st.container():
    st.markdown("<h1 style='text-align: center; color: grey;'>SMART TRADING GPT</h1>", unsafe_allow_html=True)
@@ -29,7 +29,7 @@ with st.container():
     # Hàng 2: Tab và bảng trống
     with column1:
         # Tạo tab cho các mã chứng khoán
-        selected_stock = st.selectbox("Chọn mã chứng khoán",ticket)
+        selected_stock = st.selectbox("Chọn mã chứng khoán",[A,B,C])
     with column2:
         #tao ban tom tat
         container1=st.container()
