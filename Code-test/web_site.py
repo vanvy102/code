@@ -1,6 +1,7 @@
 import streamlit as st
 import config as cf
 import time
+import vnstock as vs
 from streamlit_chat import message
 # Cài đặt thông tin model
 #openai.api_key=config.API_KEY
