@@ -1,9 +1,9 @@
-from vnstock import*
+import vnstock as vs
 API_KEY="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"
 model="text-davinci-003"
 #ham lay ma ngan hang
 def get_ticket():
-    cp=listing_companies()
+    cp=vs.listing_companies()
     check='ngân hàng thương mại cổ phần'
     ticket=[]
     for n in range(len(cp)):
@@ -11,7 +11,7 @@ def get_ticket():
             ticket.append(cp.loc[n][0])
     return ticket
 def get_name_cp():
-    cp=listing_companies()
+    cp=vs.listing_companies()
     check='ngân hàng thương mại cổ phần'
     nh=[]
     for n in range(len(cp)):
@@ -19,7 +19,7 @@ def get_name_cp():
             nh.append(cp.loc[n][2])
     return nh
 def get_trade_code():
-    cp=listing_companies()
+    cp=vs.listing_companies()
     check='ngân hàng thương mại cổ phần'
     code=[]
     index=['upcom','hose']
