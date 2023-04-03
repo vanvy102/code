@@ -40,10 +40,10 @@ with st.container():
             st.session_state['bot']=[]
         if 'user' not in st.session_state:
             st.session_state['user']=[]
-        data=cf.get_link_web(selected_stock)
+        #data=cf.get_link_web(selected_stock)
         st.markdown('####')
-        for i in data:
-            container1.write(f"{i}")
+#         for i in data:
+#             container1.write(f"{i}")
         user_question = container3.text_input("Nhập câu hỏi vào đây:")          
         if container3.button("Chat với em đi")or user_question :
             #response_text = get_response_from_chatgpt(user_question)
