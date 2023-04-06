@@ -1,6 +1,4 @@
-jsonschema
 openai==0.26.5
-vnstock
 streamlit-chat==0.0.2.2
 requests
 numpy
