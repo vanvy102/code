@@ -4,3 +4,5 @@ requests
 numpy
 pandas
 bs4
+vnstock
+io
